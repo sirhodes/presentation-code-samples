@@ -22,6 +22,9 @@ function outputMachine(platform) {
     case platform === 'freebsd':
       machine = 'Unix';
       break;
+    case platform === 'linux':
+      machine = 'Linux';
+      break;
     default:
       machine = 'not recognized, please send a Pull Request!';
       break;
